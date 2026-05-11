@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SecuritiesToken.Agency — Private Capital Markets</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap');
+    body { font-family: 'Inter', system_ui, sans-serif; }
+    .heading { font-family: 'Playfair Display', sans-serif; }
+    .hero { height: 100vh; background: linear-gradient(135deg, #0a0f1c 0%, #111827 100%); position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: url('https://picsum.photos/id/1015/2560/1440') center/cover; opacity: 0.08; mix-blend-mode: luminosity; }
+    .glass { background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(32px); border: 1px solid rgba(234, 179, 8, 0.12); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+  <!-- Ultra-Premium Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/95 border-b border-slate-800 backdrop-blur-3xl">
+    <div class="max-w-screen-2xl mx-auto px-16 py-8 flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <div class="w-9 h-9 bg-gradient-to-br from-amber-300 to-yellow-400 rounded-2xl flex items-center justify-center text-slate-950 font-bold text-2xl shadow-inner">S</div>
+        <div class="heading text-3xl font-semibold tracking-tighter text-white">SecuritiesToken.Agency</div>
+      </div>
+
+      <div class="flex items-center gap-12 text-sm font-medium tracking-wide">
+        <a href="#" class="nav-link text-white hover:text-amber-300">Issuers</a>
+        <a href="#" class="nav-link text-white hover:text-amber-300">Investors</a>
+        <a href="#" class="nav-link text-white hover:text-amber-300">Marketplace</a>
+        <a href="#" class="nav-link text-white hover:text-amber-300">Insights</a>
+      </div>
+
+      <button onclick="connectWallet()" 
+        class="px-10 py-4 text-sm font-semibold border border-amber-300/70 hover:border-amber-300 rounded-2xl transition hover:bg-amber-300 hover:text-slate-950">
+        SECURE CLIENT PORTAL
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero flex items-center">
+    <div class="max-w-screen-2xl mx-auto px-16 relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-3 text-xs tracking-[2px] font-medium text-amber-300 mb-6 border-l-2 border-amber-300 pl-6">
+          PRIVATE CAPITAL • INSTITUTIONAL EXECUTION • SINCE 2024
+        </div>
+
+        <h1 class="heading text-[98px] leading-[1.05] font-bold tracking-[-4.5px] text-white">
+          Capital, refined.<br>
+          Ownership, reimagined.
+        </h1>
+
+        <p class="mt-8 text-2xl text-slate-400 max-w-lg leading-relaxed">
+          A private banking-grade platform for security token issuance, strategic distribution, 
+          and long-term investor stewardship.
+        </p>
+
+        <div class="mt-14 flex items-center gap-6">
+          <button onclick="launchOffering()" 
+            class="px-16 py-7 bg-white text-slate-950 text-xl font-semibold rounded-3xl hover:bg-amber-300 transition flex items-center gap-4 group">
+            BEGIN ISSUANCE PROCESS
+            <span class="text-3xl group-hover:translate-x-1 transition">→</span>
+          </button>
+          
+          <button onclick="exploreMarket()" 
+            class="px-12 py-7 border border-slate-400 hover:border-white text-lg font-medium rounded-3xl transition">
+            View Current Mandates
+          </button>
+        </div>
+
+        <div class="mt-20 flex items-center gap-10 text-xs uppercase tracking-widest text-slate-400">
+          <div class="flex items-center gap-3">
+            <span class="text-emerald-400">●</span>
+            SEC • FINRA • MiCA
+          </div>
+          <div>Certified by Certik</div>
+          <div>Minimum mandate $10 million</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <div class="max-w-screen-2xl mx-auto px-16 py-28">
+    <h2 class="heading text-5xl font-semibold text-center mb-20">End-to-End Private Capital Solutions</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass p-12 rounded-3xl group hover:border-amber-300/30 transition">
+        <div class="text-5xl mb-8">🏛️</div>
+        <h3 class="text-3xl font-semibold mb-4">Security Token Issuance</h3>
+        <p class="text-slate-400 leading-relaxed">Structuring, legal engineering, ERC-1400 smart contract deployment, transfer agent integration, and full regulatory orchestration.</p>
+      </div>
+
+      <div class="glass p-12 rounded-3xl group hover:border-amber-300/30 transition">
+        <div class="text-5xl mb-8">📍</div>
+        <h3 class="text-3xl font-semibold mb-4">Strategic Capital Introduction</h3>
+        <p class="text-slate-400 leading-relaxed">High-touch placement with family offices, endowments, sovereign wealth, and institutional LPs through private dinners, targeted roadshows, and discreet mandate marketing.</p>
+      </div>
+
+      <div class="glass p-12 rounded-3xl group hover:border-amber-300/30 transition">
+        <div class="text-5xl mb-8">🤝</div>
+        <h3 class="text-3xl font-semibold mb-4">Institutional Investor Relations</h3>
+        <p class="text-slate-400 leading-relaxed">Bespoke quarterly reporting, dedicated investor portal, dividend automation, annual general meetings, and long-term relationship stewardship.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <div class="bg-slate-900 py-28">
+    <div class="max-w-screen-2xl mx-auto px-16">
+      <div class="text-center mb-16">
+        <h2 class="heading text-5xl font-semibold">Engagement Fees</h2>
+        <p class="text-slate-400 mt-3">Transparent. Competitive. Value-driven.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="glass rounded-3xl p-12">
+          <div class="text-amber-300 text-sm font-medium tracking-widest mb-2">CORE ISSUANCE</div>
+          <div class="text-6xl font-semibold mb-1">$8,500</div>
+          <div class="text-slate-400">one-time technical issuance</div>
+          <ul class="mt-12 space-y-5 text-sm">
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> ERC-1400 token deployment &amp; audit</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Compliance engine &amp; KYC hooks</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> On-chain cap table &amp; dividends</li>
+          </ul>
+          <button onclick="launchOffering()" class="mt-16 w-full py-6 border border-slate-400 rounded-2xl hover:bg-slate-800">Select Core</button>
+        </div>
+
+        <div class="glass rounded-3xl p-12 ring-2 ring-amber-400 relative -mt-4">
+          <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-amber-400 text-slate-950 px-10 py-2 text-sm font-bold rounded-full">SIGNATURE</div>
+          <div class="text-amber-300 text-sm font-medium tracking-widest mb-2">FULL MANDATE</div>
+          <div class="text-6xl font-semibold mb-1">$19,000</div>
+          <div class="text-slate-400">issuance + strategic placement</div>
+          <ul class="mt-12 space-y-5 text-sm">
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Everything in Core</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Private placement campaign</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Targeted family office outreach</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> 6-month premium IR &amp; reporting</li>
+          </ul>
+          <button onclick="launchOffering()" class="mt-16 w-full py-6 bg-amber-400 hover:bg-amber-300 text-slate-950 font-semibold rounded-2xl">Begin Signature Mandate</button>
+        </div>
+
+        <div class="glass rounded-3xl p-12">
+          <div class="text-amber-300 text-sm font-medium tracking-widest mb-2">SOVEREIGN</div>
+          <div class="text-6xl font-semibold mb-1">Custom</div>
+          <div class="text-slate-400">for funds &amp; institutions</div>
+          <ul class="mt-12 space-y-5 text-sm">
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> White-glove service</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Dedicated deal team</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Multi-jurisdictional structuring</li>
+            <li class="flex gap-3"><i class="fa-solid fa-check text-emerald-400 mt-0.5"></i> Ongoing capital introduction</li>
+          </ul>
+          <button onclick="contactSales()" class="mt-16 w-full py-6 border border-slate-400 rounded-2xl hover:bg-slate-800">Speak with Managing Director</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function connectWallet() {
+      alert("Client portal access granted.\nWelcome back.");
+    }
+
+    function launchOffering() {
+      alert("Thank you. A senior issuance director will contact you within the hour.");
+    }
+
+    function exploreMarket() {
+      alert("Accessing Private Mandate Marketplace");
+    }
+
+    function contactSales() {
+      alert("Connecting you with our Managing Director.");
+    }
+  </script>
+</body>
+</html>
